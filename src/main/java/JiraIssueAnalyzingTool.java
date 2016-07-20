@@ -35,7 +35,6 @@ public class JiraIssueAnalyzingTool {
         int tmseExistingTimespentIssuesQuantity =
                 findIssueQuantity.findExistingTimespentissue(TMSE_FUTURETYPE_ISSUES_URL);
 
-
         System.out.println("DaouOffice 신규기능 타입의 Issue 총 갯수  : " + doIssuesTotalQuantity + "개");
         System.out.println("DaouOffice 신규기능 타입의 작업 시간 합계 : " + dototalworkingtime / 60 + "분");
         System.out.println("DaouOffice 신규기능 타입의 작업 시간 평균 : " + dototalworkingtime / (60 * doExistingTimespentIssuesQuantity) + "분\n");
@@ -45,6 +44,5 @@ public class JiraIssueAnalyzingTool {
         System.out.println("TMSe 신규기능 타입의 작업 시간 평균 : " + tmsetotalworkingtime / (60 * tmseExistingTimespentIssuesQuantity) + "분");
 
     }
-
 
 }

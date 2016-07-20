@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <deploy.target.dir>c:/myproject</deploy.target.dir>
+        <deploy.target.dir>C:\Users\intern\IdeaProjects\JiraIssueAnalyzingTool2</deploy.target.dir>
         <lib.dir>lib</lib.dir>
         <jar.name>JiraIssueAnalyzingTool</jar.name>
     </properties>

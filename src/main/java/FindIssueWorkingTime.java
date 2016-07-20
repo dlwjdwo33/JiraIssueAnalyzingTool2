@@ -15,11 +15,11 @@ public class FindIssueWorkingTime {
      * jql필터 조건에 맞는 이슈의 작업시간 총합을 반환해준다.
      *
      * @param jiraurl
-     * @return 필터 조건에 맞는 jira이슈들의 총 작업시간
+     * @return 필터 조건에 맞는 지라 이슈들의 총 작업시간
      */
     public int findTotalWorkingtime(String jiraurl) throws AuthenticationException {
 
-        int WORKINGTIME      = 0;
+        int WORKINGTIME = 0;
         int TOTAL_WORKINGTIME = 0;
 
         String auth = new String(Base64.encode("hoguma33:hoguma33"));
@@ -44,7 +44,7 @@ public class FindIssueWorkingTime {
         JSONArray projectArray = jirajsonobj.getJSONArray("issues");
         for (int i = 0; i < projectArray.length(); i++) {
             JSONObject doissue = projectArray.getJSONObject(i);
-            if(!doissue.getJSONObject("fields").get("timespent").equals(null)) {
+            if (!doissue.getJSONObject("fields").get("timespent").equals(null)) {
                 WORKINGTIME = Integer.parseInt(doissue.getJSONObject("fields").get("timespent").toString());
                 TOTAL_WORKINGTIME += WORKINGTIME;
             }

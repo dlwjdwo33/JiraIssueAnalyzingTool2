@@ -11,12 +11,11 @@ import org.json.JSONObject;
  */
 public class FindIssueQuantity {
 
-
     /**
      * jql필터 조건에 맞는 이슈의 개수를 반환해준다.
      *
      * @param jiraurl
-     * @return 필터 조건에 맞는 jira이슈들의 총 갯수
+     * @return 필터 조건에 맞는 지라 이슈들의  총 갯수
      */
 
     public int findIssuesTotalQuantity(String jiraurl) throws AuthenticationException {
@@ -42,7 +41,6 @@ public class FindIssueQuantity {
 
         return Integer.parseInt(jiraissuesjsonobj.get("total").toString());
     }
-
 
     /**
      * jql필터 조건에 맞는 이슈중 작업시간이 있는 이슈들의 갯수 반환
@@ -84,6 +82,5 @@ public class FindIssueQuantity {
 
         return EXISTING_TIMESPENT_ISSUEQUANTITY;
     }
-
 
 }

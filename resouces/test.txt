@@ -1,4 +1,0 @@
-# 이메일을 보내기 위한 email 모듈을 import 한다
-# MIME (Multipurpose Internet Mail Extensions) 는 전자우편을 위한 인터넷 표준이라고 한다.
-from email.mime.text import MIMEText
- 

@@ -1,7 +1,6 @@
 
 import org.apache.http.auth.AuthenticationException;
 
-
 /**
  * Created by intern on 2016-07-19.
  */
@@ -42,7 +41,6 @@ public class JiraIssueAnalyzingToolTest {
         System.out.println("TMSe 신규기능 타입의 Issue 총 갯수  : " + tmseIssuesTotalQuantity + "개");
         System.out.println("TMSe 신규기능 타입의 작업 시간 합계 : " + tmsetotalworkingtime / 60 + "분");
         System.out.println("TMSe 신규기능 타입의 작업 시간 평균 : " + tmsetotalworkingtime / (60 * tmseExistingTimespentIssuesQuantity) + "분");
-
     }
 
 }
